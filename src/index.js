@@ -27,7 +27,7 @@ root.render(
                   <Link to="/escape" className="nav-link">HTMLエスケープ</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/conversion" className="nav-link">単位変換</Link>
+                  <Link to="/conversion" className="nav-link">バイト変換</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/age" className="nav-link">年齢早見</Link>
