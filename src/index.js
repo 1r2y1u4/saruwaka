@@ -7,8 +7,6 @@ import Count from './components/countCharacter'
 import Escape from './components/htmlEscape'
 import Conversion from './components/unitConversion'
 import Age from './components/ageConversion'
-import Calender from './components/calender'
-import Eto from './components/eto'
 import './css/index.css';
 
 
@@ -30,13 +28,7 @@ root.render(
                   <Link to="/conversion" className="nav-link">バイト変換</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/age" className="nav-link">年齢早見</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/calender" className="nav-link">西暦和暦早見</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/eto" className="nav-link">干支変換</Link>
+                  <Link to="/age" className="nav-link">年齢検索</Link>
                 </li>
               </ul>
             </nav>
@@ -45,8 +37,6 @@ root.render(
             <Route path="/escape" element={<Escape />} />
             <Route path="/conversion" element={<Conversion />} />
             <Route path="/age" element={<Age />} />
-            <Route path="/calender" element={<Calender />} />
-            <Route path="/eto" element={<Eto />} />
           </Routes>
         </div>
     </Router>
