@@ -1,0 +1,57 @@
+.container {
+    max-width: 80%;
+    margin: 50px auto; /* 中央揃え */
+    padding: 30px; /* 内側の余白 */
+    background-color: #fff3e0; /* オレンジ色の背景 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 軽い影 */
+    border-radius: 8px; /* 角の丸み */
+  }
+  
+  .function-name {
+    font-size: 24px; /* タイトルのフォントサイズ */
+    color: #ff9800;
+    margin-bottom: 20px; /* タイトルとテキストエリアの間の余白 */
+    border-bottom: solid 5px #ff9800;
+  }
+  
+  .box {
+    display: block; /* ブロック要素として扱う */
+    width: 95%; /* 横幅 */
+    height: 200px; /* 縦幅 */
+    padding: 10px; /* 内側の余白 */
+    border: 2px solid #ff9800; /* オレンジ色のボーダー */
+    border-radius: 4px; /* 入力フィールドの角の丸み */
+    font-size: 16px; /* フォントサイズ */
+  }
+  
+  .result {
+    color: #ff9800; /* オレンジ色のテキスト */
+    font-size: 18px; /* フォントサイズ */
+    font-weight: bold; /* フォントの太さ */
+    margin-bottom: 10px; /* 結果表示間の余白 */
+  }
+
+  .button {
+    display: block; /* ブロックレベル要素として扱う */
+    margin: 3px auto; /* 上下のマージンを10px、左右のマージンをautoに設定 */
+    background-color: #ff9800; /* 明るいオレンジ色 */
+    color: #ffffff; /* 白色のテキスト */
+    border: none; /* ボーダーを削除 */
+    padding: 10px 20px; /* 上下のパディングと左右のパディング */
+    font-size: 16px; /* フォントサイズ */
+    font-weight: bold; /* フォントの太さ */
+    border-radius: 5px; /* 角の丸み */
+    cursor: pointer; /* ホバー時にカーソルをポインターに変更 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 軽いボックスシャドウ */
+    transition: background-color 0.3s, transform 0.2s; /* 背景色と変形のアニメーション */
+  }
+  
+  .button:hover {
+    background-color: #e65100; /* 濃いオレンジ色に変更 */
+    transform: translateY(-2px); /* 少し上に移動 */
+  }
+  
+  .button:active {
+    transform: translateY(1px); /* クリック時に少し下に移動 */
+  }
+  

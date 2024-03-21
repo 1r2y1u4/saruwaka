@@ -1,0 +1,32 @@
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -100%); /* X軸方向に-50%移動して中央揃え */
+  background-color: rgba(255, 165, 0, 0.7); /* オレンジ色の背景を半透明に */  color: white; /* テキストの色 */
+  z-index: 1000;
+  animation: fadeOut 2s forwards;
+  animation-delay: 2s; /* 表示後2秒間待ってからフェードアウト開始 */
+  border-radius: 20px; /* ボタンにも丸みを */
+}
+
+.modal-content {
+  display: flex; /* フレックスボックスを有効にする */
+  justify-content: space-between; /* 要素間を均等に配置 */
+  align-items: center; /* アイテムを中央揃えにする */
+  padding: 10px 20px; /* パディングを適切に調整 */
+}
+
+.modal-message {
+  margin: 0; /* メッセージのマージンをリセット */
+  flex-grow: 1; /* メッセージを余白いっぱいに広げる */
+}
+
