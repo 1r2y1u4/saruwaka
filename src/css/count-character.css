@@ -14,7 +14,7 @@
   border-bottom: solid 5px #ff9800;
 }
 
-.input {
+.character-input {
   display: block; /* ブロック要素として扱う */
   width: 95%; /* 親要素の幅に合わせる */
   height: 200px;

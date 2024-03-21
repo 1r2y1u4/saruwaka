@@ -12,7 +12,7 @@ function CountCharacters(){
     return (
         <div className="container">
             <div className="function-name">文字数のカウント</div>
-            <textarea className="input" value={character} onChange={handleInputChange} placeholder="テキストを入力してください"/>
+            <textarea className="character-input" value={character} onChange={handleInputChange} placeholder="テキストを入力してください"/>
             <p className="result">改行を含めた文字数：{character.length}</p>
             <p className="result">改行を含めない文字数：{characterWithoutLines.length}</p>
         </div>

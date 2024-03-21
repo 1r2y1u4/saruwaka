@@ -1,0 +1,73 @@
+.container {
+  max-width: 80%;
+  margin: 50px auto; /* 中央揃え */
+  padding: 30px; /* 内側の余白 */
+  background-color: #fff3e0; /* オレンジ色の背景 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 軽い影 */
+  border-radius: 8px; /* 角の丸み */
+}
+
+.function-name {
+  font-size: 24px; /* タイトルのフォントサイズ */
+  color: #ff9800;
+  margin-bottom: 20px; /* タイトルとテキストエリアの間の余白 */
+  border-bottom: solid 5px #ff9800;
+}
+
+.input {
+  display: block; /* ブロック要素として扱う */
+  width: 50%; /* 親要素の幅に合わせる */
+  height: 10px;
+  padding: 10px; /* 内側の余白 */
+  margin-bottom: 20px; /* 下側の余白 */
+  border: 2px solid #ff9800; /* オレンジ色のボーダー */
+  border-radius: 4px; /* 入力フィールドの角の丸み */
+  font-size: 16px; /* フォントサイズ */
+}
+
+.result {
+  color: #ff9800; /* オレンジ色のテキスト */
+  font-size: 18px; /* フォントサイズ */
+  font-weight: bold; /* フォントの太さ */
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 10px; /* 結果表示間の余白 */
+}
+
+.table-container {
+  width: 50%;
+  max-width: 600px; /* テーブルの最大幅 */
+  border-collapse: collapse; /* ボーダーの重なりをなくす */
+  margin: 20px auto; /* 上下にマージンを設定し、左右のマージンをautoにして中央揃え */
+  overflow: hidden; /* ボーダーの丸みのため */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影をつける */
+  border-radius: 8px; /*丸みをつける */
+}
+
+thead th {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f0f0f0; /* ゼブラストライプ */
+}
+
+tbody tr:hover {
+  background-color: #e1f5fe; /* ホバー時の背景色 */
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* 各セルの下ボーダー */
+  text-align: right; /* 数値データのため右寄せ */
+}
+
+td:first-child {
+  text-align: left; /* 単位は左寄せ */
+}
+
+tbody tr:last-child td {
+  border-bottom: none; /* 最後の行の下ボーダーを除去 */
+}
