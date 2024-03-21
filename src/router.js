@@ -4,14 +4,14 @@ import TopPage from './components/topPage';
 import Header from './components/header';
 
 function AppRoutes() {
-  return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<TopPage />} />
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={<TopPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default AppRoutes;
