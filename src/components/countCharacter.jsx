@@ -3,6 +3,7 @@ import "../css/count-character.css"
 
 function CountCharacters(){
     const [character, setCharacter] = useState('')
+    const characterWithoutLines = character.replace(/\n/g, '');
 
     const handleInputChange = (event) => {
         setCharacter(event.target.value);
@@ -10,8 +11,10 @@ function CountCharacters(){
 
     return (
         <div className="container">
-            <input className="input" type="text" value={character} onChange={handleInputChange} placeholder="テキストを入力してください"/>
-            <span className="result">文字数：{character.length}</span>
+            <div className="function-name">文字数のカウント</div>
+            <textarea className="input" value={character} onChange={handleInputChange} placeholder="テキストを入力してください"/>
+            <p className="result">改行を含めた文字数：{character.length}</p>
+            <p className="result">改行を含めない文字数：{characterWithoutLines.length}</p>
         </div>
     );
 }

@@ -1,24 +1,34 @@
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #fff3e0; /* オレンジ色の背景 */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 軽い影で立体感を出す */
-    border-radius: 8px; /* 角を少し丸く */
-  }
-  
-  .input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #ff9800; /* オレンジ色のボーダー */
-    border-radius: 4px; /* 入力フィールドの角を丸く */
-    font-size: 16px;
-  }
-  
-  .result {
-    color: #ff9800; /* オレンジ色のテキスト */
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
+  max-width: 80%;
+  margin: 50px auto; /* 中央揃え */
+  padding: 30px; /* 内側の余白 */
+  background-color: #fff3e0; /* オレンジ色の背景 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 軽い影 */
+  border-radius: 8px; /* 角の丸み */
+}
+
+.function-name {
+  font-size: 24px; /* タイトルのフォントサイズ */
+  color: #ff9800;
+  margin-bottom: 20px; /* タイトルとテキストエリアの間の余白 */
+  border-bottom: solid 5px #ff9800;
+}
+
+.input {
+  display: block; /* ブロック要素として扱う */
+  width: 95%; /* 親要素の幅に合わせる */
+  height: 200px;
+  padding: 10px; /* 内側の余白 */
+  margin-bottom: 20px; /* 下側の余白 */
+  border: 2px solid #ff9800; /* オレンジ色のボーダー */
+  border-radius: 4px; /* 入力フィールドの角の丸み */
+  font-size: 16px; /* フォントサイズ */
+}
+
+.result {
+  color: #ff9800; /* オレンジ色のテキスト */
+  font-size: 18px; /* フォントサイズ */
+  font-weight: bold; /* フォントの太さ */
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 10px; /* 結果表示間の余白 */
+}
